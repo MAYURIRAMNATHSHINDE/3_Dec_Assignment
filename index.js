@@ -15,4 +15,43 @@ let obj={
 let operation=(num)=> obj;
 console.log(operation())
 
-/************************************************** */
+/************************** Q.No 3************************ */
+
+const people = [ {
+    name: "Alice",
+    address: {
+        city: "New York",
+        street: { 
+            name: "Broadway",
+            number: 653 
+        } 
+    } 
+    },
+    {
+        name: "Bob",
+        address: {
+            city: "Los Angeles",
+            street: {
+                name: "Sunset Boulevard",
+                number: 936 
+            } 
+        } 
+    },
+    {
+        name: "Emili",
+        address: {
+            city: "Londan",
+            street: {
+                name: "M.G Street",
+                number: 366 
+            } 
+        } 
+    },
+    
+    ];
+
+    people.forEach(i=>{
+        console.log(`${i.name} lives in ${i.address.city} on ${i.address.street.name}`)
+    })
+    
+    // ["Alice lives in New York on Broadway", "Bob lives in Los Angeles on Sunset Boulevard"]

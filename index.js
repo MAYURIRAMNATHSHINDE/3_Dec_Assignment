@@ -54,4 +54,27 @@ const people = [ {
         console.log(`${i.name} lives in ${i.address.city} on ${i.address.street.name}`)
     })
     
-    // ["Alice lives in New York on Broadway", "Bob lives in Los Angeles on Sunset Boulevard"]
+    /*********************************** Q.No 4************************************* */
+
+const profile = { 
+    name: "Charlie",
+    age: 29,
+    address: {
+        city: "San Francisco",
+        zipcode: "94101"
+    } 
+};
+
+ const updates = {
+    age: 30,
+    address: {
+        zipcode: "94109",
+        country: "USA" 
+    }
+};
+
+let profile1={...profile,...updates,address: {
+    ...profile.address,
+    ...updates.address,
+},}
+console.log(profile1)
